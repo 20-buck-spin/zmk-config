@@ -1,6 +1,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/outputs.h>
 
 #define DEFAULT 0
 #define LWR 1
@@ -53,11 +54,11 @@
 
         adjust_layer {
             bindings = <
-                &none &bt BT_SEL 0 &trans &none &none  &none            &none       &none  &none &none &none &none
-                &none &bt BT_SEL 1 &trans &none &sys_reset &none        &none       &sys_reset &none &none &none &none
-                &none &bt BT_SEL 2 &none        &none &none  &none      &none       &none  &none &none &none &none
-                &none &bt BT_SEL 3 &trans   &none &none  &bootloader    &bootloader &none  &none &none &none &none
-                                   &none        &none                                            &none &none
+                &none &bt BT_SEL 0 &out OUT_USB &none &none       &none           &none       &none      &none &none &none &none
+                &none &bt BT_SEL 1 &out OUT_BLE &none &sys_reset  &none           &none       &sys_reset &none &none &none &none
+                &none &bt BT_SEL 2 &out OUT_TOG &none &none       &none           &none       &none      &none &none &none &none
+                &none &bt BT_SEL 3 &trans       &none &none &bootloader           &bootloader &none      &none &none &none &none
+                                   &none  &none                                               &none      &none
 
 
                                              &trans  &trans &trans               &trans &trans &trans
