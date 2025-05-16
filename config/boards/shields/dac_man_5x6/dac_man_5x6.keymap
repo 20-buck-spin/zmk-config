@@ -21,7 +21,7 @@
                                         &kp LBKT &kp RBKT                                           &kp LPAR  &kp RPAR
 
                                             &kp BSPC    &kp SPACE  &mt LALT TAB         &mt LSHIFT TAB  &mt LCTRL RET &kp DEL 
-                                            &kp HOME    &kp LGUI   &mo LWR              &mo RSE         &kp LGUI       &kp LALT
+                                            &kp HOME    &kp LCTRL  &mo LWR              &mo RSE         &kp LGUI       &kp LALT
                                                         
             >;
         };
@@ -48,7 +48,7 @@
                                &trans &trans                                            &trans &trans
 
                                              &trans  &trans &trans               &trans  &trans &trans
-                                             &trans  &trans &trans               &mo ADJ &trans &trans
+                                             &trans  &trans &mo ADJ              &trans  &trans &trans
             >;
         };
 
